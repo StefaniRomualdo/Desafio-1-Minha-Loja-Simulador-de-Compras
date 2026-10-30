@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doce Ilha - Doceria Artesanal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <img class="banner" src="assets/banner.png" alt="Banner da loja: doceria artesanal com pudim, bolos e docinhos">
+
+  <header class="topo">
+    <h1>Doce Ilha</h1>
+    <p>Doces caseiros feitos em pequenas fornadas, com sabor de casa de vó.</p>
+  </header>
+
+  <main>
+    <section class="cardapio">
+      <h2>Nossos doces</h2>
+      <div class="produtos">
+
+
+
+        <article class="produto" style="--cor: #e8a93a;">
+          <div class="foto">
+            <img src="assets/pudim.jpg" alt="Pudim tradicional" onerror="this.remove()">
+          </div>
+          <h3>Pudim Tradicional</h3>
+          <p>O clássico de leite condensado, cremoso, com calda de caramelo dourada.</p>
+          <p class="preco">R$ 7,00</p>
+        </article>
+
+
+
+        <article class="produto" style="--cor: #9bb83a;">
+          <div class="foto">
+            <img src="assets/tortra.jpg" alt="Torta de limão" onerror="this.remove()">
+          </div>
+          <h3>Torta de Limão</h3>
+          <p>Massa amanteigada com recheio cremoso e refrescante de limão.</p>
+          <p class="preco">R$ 8,00</p>
+        </article>
+
+
+        <article class="produto" style="--cor: #5b3426;">
+          <div class="foto">
+            <img src="assets/caseirinho.jpg" alt="Mini caseirinho de cenoura com chocolate" onerror="this.remove()">
+          </div>
+          <h3>Mini Caseirinho de Cenoura com Chocolate</h3>
+          <p>Bolinho caseiro de cenoura com chocolate, macio e bem chocolatudo.</p>
+          <p class="preco">R$ 5,00</p>
+        </article>
+
+
+      </div>
+
+    </section>
+
+    <section class="instrucoes">
+      <h2>Simule sua compra</h2>
+      <ol>
+        <li>Clique em “Simular compra”.</li>
+        <li>Digite a quantidade de cada doce quando a caixa de texto aparecer.</li>
+        <li>Digite 0 para os doces que não quer comprar.</li>
+        <li>Veja o resumo com os valores e o total do pedido.</li>
+      </ol>
+        
+      <button type="button" class="botao-simular" onclick="simularCompra()">Simular compra</button>
+    <script src="script.js"></script>
+
+    </section>
+
+    <section class="contatos">
+      <h2>Fale com a Doce Ilha</h2>
+      <p>Gostou? Acompanhe nossos canais.</p>
+      <ul>
+        <li>Instagram: <a href="https://www.instagram.com/doceilha.slz?vrfl=MWE5N3Rtc245dWoxeA==" target="_blank" rel="noopener">@doceilha.slz</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Stéfani Romualdo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

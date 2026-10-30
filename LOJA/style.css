@@ -1,0 +1,223 @@
+:root {
+  --creme: #fff6e8;
+  --goiaba: #9a5a1c;
+  --maracuja: #e6b45c;
+  --limao: #7a9a1e;
+  --caramelo: #4a2c1d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body 
+{
+  margin: 0;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--caramelo);
+  background: var(--creme);
+}
+
+h1, h2, h3 
+{
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+
+
+
+
+.banner 
+{
+  display: block;
+  width: calc(100% - 3rem);
+  max-width: 59rem;
+  height: auto;
+  margin: 1.5rem auto 0;
+  border: 3px solid var(--caramelo);
+  border-radius: 14px;
+}
+
+
+.topo 
+{
+  color: var(--caramelo);
+  text-align: center;
+  padding: 2rem 1.5rem 0;
+}
+
+.topo h1 
+{
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--goiaba);
+}
+
+.topo p 
+{
+  max-width: 36rem;
+  margin: 0.75rem auto 0;
+}
+
+
+
+main 
+{
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+
+main h2 
+{
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+
+
+
+.produtos 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+
+
+
+.produto 
+{
+  background: #fff;
+  border: 3px solid var(--caramelo);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.foto 
+{
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: #f3e6d0;
+}
+
+
+.foto img 
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.produto h3 
+{
+  font-size: 1.3rem;
+}
+
+.produto p 
+{
+  margin: 0 0 1rem;
+}
+
+.produto .preco 
+{
+  margin: auto 0 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--goiaba);
+}
+
+
+
+.instrucoes {
+  margin-top: 3rem;
+  background: var(--maracuja);
+  border: 3px solid var(--caramelo);
+  border-radius: 14px;
+  padding: 1.75rem;
+}
+
+.instrucoes ol 
+{
+  margin: 0 0 1rem;
+  padding-left: 1.4rem;
+}
+
+.botao-simular 
+{
+  display: block;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--creme);
+  background: var(--goiaba);
+  border: 3px solid var(--caramelo);
+  border-radius: 999px;
+  padding: 0.9rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 5px 0 var(--caramelo);
+}
+
+.botao-simular:hover 
+{
+  background: var(--caramelo);
+}
+
+.botao-simular:active 
+{
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--caramelo);
+}
+
+.botao-simular:focus-visible,
+.contatos a:focus-visible 
+{
+  outline: 3px solid var(--limao);
+  outline-offset: 3px;
+}
+
+
+
+.contatos {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contatos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.contatos li {
+  margin-bottom: 0.4rem;
+}
+
+.contatos a {
+  color: var(--goiaba);
+}
+
+
+
+footer {
+  background: var(--caramelo);
+  color: var(--creme);
+  text-align: center;
+  padding: 1.25rem;
+}
+
+footer p {
+  margin: 0;
+}
